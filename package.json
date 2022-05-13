@@ -1,0 +1,34 @@
+{
+  "name": "klever-challenger",
+  "version": "1.0.0",
+  "description": "Klever Challenger API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js",
+    "test": "NODE_ENV='mongodb://localhost:27017/klever_challenger_test' jest",
+    "lint": "./node_modules/.bin/eslint . --ext .js",
+    "compose:up": "docker-compose up -d"
+  },
+  "author": "Wesley Yudi",
+  "license": "ISC",
+  "dependencies": {
+    "@cloudnative/health-connect": "^2.1.0"
+  },
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.15.0",
+    "express": "^4.18.1",
+    "express-joi-validation": "^5.0.1",
+    "express-rescue": "^1.1.31",
+    "https": "^1.0.0",
+    "jest": "^28.1.0",
+    "joi": "^17.6.0",
+    "mongoose": "^6.3.3",
+    "nodemon": "^2.0.16",
+    "sinon": "^14.0.0",
+    "supertest": "^6.2.3"
+  }
+}
